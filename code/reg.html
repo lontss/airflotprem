@@ -1,0 +1,209 @@
+
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Регистрация — Приморский аэропорт</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f7f9;
+            color: #333;
+        }
+        header {
+            background-color: #c4d5e6;
+            padding: 25px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            border-bottom: 2px solid #a8bdcf;
+        }
+
+        .logo-text {
+            font-size: 36px;
+            font-weight: bold;
+            margin: 0;
+        }
+
+        .plane-icon {
+            background-color: #1f94b7;
+            color: white;
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 32px;
+            position: absolute;
+            right: 5%;
+        }
+
+        
+        main {
+            padding: 50px 20px;
+            max-width: 600px; 
+            margin: 0 auto;
+        }
+
+        .registration-card {
+            background: white;
+            padding: 40px;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+            border-top: 5px solid #1f94b7;
+        }
+
+        h2 { 
+            color: #1f94b7; 
+            margin-top: 0; 
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        /* Стили полей ввода */
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: bold;
+            color: #555;
+        }
+
+        input[type="text"], 
+        input[type="email"],
+        select {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            box-sizing: border-box; 
+            font-size: 16px;
+        }
+
+        
+        .services-group {
+            background-color: #f9fbfd;
+            padding: 20px;
+            border-radius: 10px;
+            margin-top: 25px;
+        }
+
+        .service-item {
+            display: flex;
+            align-items: center;
+            margin-bottom: 15px;
+            cursor: pointer;
+        }
+
+        .service-item input {
+            margin-right: 15px;
+            width: 20px;
+            height: 20px;
+            cursor: pointer;
+        }
+
+        
+        .submit-btn {
+            width: 100%;
+            background-color: #1f94b7;
+            color: white;
+            border: none;
+            padding: 15px;
+            border-radius: 10px;
+            font-size: 18px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: background 0.3s;
+            margin-top: 20px;
+        }
+
+        .submit-btn:hover {
+            background-color: #167a98;
+        }
+
+        .back-link {
+            display: block;
+            text-align: center;
+            margin-top: 20px;
+            color: #8bb3db;
+            text-decoration: none;
+        }
+
+        .back-link:hover {
+            text-decoration: underline;
+        }
+
+       
+        footer {
+            background-color: #c4d5e6;
+            padding: 20px;
+            text-align: center;
+            font-size: 14px;
+            margin-top: 50px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1 class="logo-text">Регистрация</h1>
+        
+    </header>
+ <main>
+        <div class="registration-card">
+            <h2>Оформление услуг</h2>
+            
+            <form>
+                <div class="form-group">
+                    <label for="fio">Введите ваше ФИО</label>
+                    <input type="text" id="fio" name="fio" placeholder="Иванов Иван Иванович" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="ticket">Тип билета</label>
+                    <select id="ticket" name="ticket">
+                        <option value="economy">Эконом класс</option>
+                        <option value="business">Бизнес класс</option>
+                        <option value="first">Первый класс</option>
+                    </select>
+                </div>
+
+                <div class="services-group">
+                    <label>Дополнительные услуги:</label>
+                    
+                    <label class="service-item">
+                        <input type="checkbox" name="service" value="buy-ticket"> 
+                        Покупка билета
+                    </label>
+
+                    <label class="service-item">
+                        <input type="checkbox" name="service" value="parking"> 
+                        Аренда парковочного места
+                    </label>
+
+                    <label class="service-item">
+                        <input type="checkbox" name="service" value="luggage"> 
+                        Покупка доп. багажа
+                    </label>
+                </div>
+
+                <button type="submit" class="submit-btn">Оформить заказ</button>
+            </form>
+
+            <a href="index.html" class="back-link">← Вернуться на главную</a>
+        </div>
+    </main>
+
+    <footer>
+        &copy; 2026 год | Сайт создан Ивановым Егором | <strong>e-mail:</strong> egorma289@gmail.com
+    </footer>
+
+</body>
+</html>
